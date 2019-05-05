@@ -9,6 +9,9 @@ describe('node', function () {
   it('must have version ' + expectedNodeVersion, function(done){
     var actualNodeVersion = require(path.join(__dirname, '../version'))
     expect(actualNodeVersion).to.be.equal(expectedNodeVersion)
+    // console.log('Actual Node Version:',actualNodeVersion)
+    // console.log('Expected Node Version:',expectedNodeVersion)
+
     done()
   })
 })
@@ -29,5 +32,3 @@ describe('env var NODE_ENV', function () {
     done()
   })
 })
-
-
