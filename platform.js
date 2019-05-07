@@ -1,1 +1,1 @@
-
+module.exports = process.platform
